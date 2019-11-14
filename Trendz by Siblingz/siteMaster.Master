@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="siteMaster.master.cs" Inherits="Trendz_by_Siblingz.siteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom-Cs.ss" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+            <nav class="navbar navbar-inverse">
+                
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Trendz by Siblingz</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="default.aspx"><span class="glyphicon glyphicon-home ">Home</span></a></li>
+                        <li><a href="equipments.aspx"><span class="glyphicon glyphicon-hdd">Equipments</span></a></li>
+                        <li><a href="ebooks.aspx"><span class="glyphicon glyphicon-education">Ebooks</span></a></li>
+                        <li><a href="plugins.aspx"><span class="glyphicon glyphicon-headphones">Plugins</span></a></li>
+                        <li><a href="daws.aspx"><span class="glyphicon glyphicon-music">DAWs</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Cart<asp:Label ID="Label1" runat="server" Text=" [0] "></asp:Label></a></li>
+                        <li> </li>
+                    </ul>
+                
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div class="container-fluid">
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</body>
+</html>
